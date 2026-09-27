@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-144-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-145-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
-![Open source](https://img.shields.io/badge/open%20source-41-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
+![Open source](https://img.shields.io/badge/open%20source-42-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evals](https://img.shields.io/badge/Jev%20evals-23-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-105-181717?style=flat-square&logo=github&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-106-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -26,7 +26,7 @@
 
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
-- [🧪 Open Source](#-open-source) (41)
+- [🧪 Open Source](#-open-source) (42)
 - [🔧 Built with Jev](#-built-with-jev) (35)
 - [📊 Independent Evaluations](#-independent-evaluations) (24)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
@@ -41,9 +41,9 @@
 
 🆕 **2026-09-22 · Ecosystem refresh.** 14 additions: local and multimodal decision models, Android chat assistance, robot and game demos, calibration tools and comparative evaluations. All 14 have gallery cards; two older entries returning 404 were removed. [Reviewed sources and scope](updates/2026-09-22.md).
 
-🚀 **2026-09 · Collection status.** 144 entries in 8 sections. PRs welcome.
+🚀 **2026-09 · Collection status.** 145 entries in 8 sections. PRs welcome.
 
-🧪 **2026-09 · Open source and evaluations.** 41 open models and codebases rebuild the System One shape, and 23 independent evaluations of Jev are collected under Independent Evaluations.
+🧪 **2026-09 · Open source and evaluations.** 42 open models and codebases rebuild the System One shape, and 23 independent evaluations of Jev are collected under Independent Evaluations.
 
 ---
 
@@ -107,6 +107,7 @@ Open weights and code that rebuild the System One shape from encoders, small dec
 - [system-one-qwen3.5-4b-scorer](https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer), Qwen3.5-4B base trained as a Score-style rubric rater. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer)
 - [system-one-mini](https://huggingface.co/DavidHatley/system-one-mini), DistilBERT-sized System One shape, a floor for how small the idea can go. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/DavidHatley/system-one-mini)
 - [Jebadiah](https://github.com/getainode/jebadiah), Apache-2.0 decision models at 27B, 9B and 4B on Qwen bases (bf16, GGUF and MLX) that answer Choice, Noul and Score questions with a probability for every option from one forward pass; runs as a standalone server with Jev's `/v1/systemone` wire and a playground, through a llama.cpp script for the GGUF builds, or on AINode (open-source local AI platform). [![Code](https://img.shields.io/github/stars/getainode/jebadiah?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/getainode/jebadiah) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/frontier-infra/jebadiah-27b)
+- [jevos](https://github.com/feder-cr/jev), MIT-licensed MiniCPM5-1B cut to 17 layers with a one-logit head, 619 MB GGUF q4_k_m running on CPU-only llama.cpp; answers only Jev's Noul (yes/no) questions over the same `/v1/systemone` wire in one forward pass, 54 to 220 ms on a laptop CPU; authors report 0.815 accuracy on 2,000 held-out yes/no questions versus Jev's 0.927. [![Code](https://img.shields.io/github/stars/feder-cr/jev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/feder-cr/jev)
 
 ---
 
