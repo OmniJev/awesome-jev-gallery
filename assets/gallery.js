@@ -48,7 +48,9 @@
     else if (state.sort === 'newest') { list = list.slice().sort((a, b) => ((b.date || '').localeCompare(a.date || '')) || (a.order - b.order)); }
     shown = list;
   }
-  function cardHTML(c) {
+  function cardHTML(c, i) {
+    // title bar colours alternate: neighbours across and down never share one
+    const k = (i % state.cols + 2 * Math.floor(i / state.cols)) % 4;
     const s = SEC[c.section];
     const text = c.blurb || (c.why ? c.why[0].toUpperCase() + c.why.slice(1) : '');
     const n = c.stars ? `<span class="n">${I_STAR}${stars(c.stars)}</span>`
@@ -58,7 +60,7 @@
       : c.hf ? `${I_HF}<span>${esc(c.hf.split('/')[0])}</span>`
       : c.arxiv ? `${I_DOC}<span>${esc(c.venue || 'arXiv')}</span>`
       : `${I_GLOBE}<span>${esc(domain(c.url))}</span>`;
-    return `<a class="card" href="${esc(c.url)}" target="_blank" rel="noopener" data-key="${esc(c.key)}" title="${esc(s.label)}" style="--sc:var(--s-${c.section})">
+    return `<a class="card b${k}" href="${esc(c.url)}" target="_blank" rel="noopener" data-key="${esc(c.key)}" title="${esc(s.label)}" style="--sc:var(--s-${c.section})">
       <div class="win-t"><span class="t">${esc(c.name)}</span>${n}</div>
       <div class="ph"><img loading="lazy" src="${esc(c.thumb)}" width="800" height="500" alt=""></div>
       <div class="why">${esc(text)}</div>
@@ -68,7 +70,7 @@
   function render() {
     compute();
     $('#grid').style.setProperty('--cols', state.cols);
-    $('#grid').innerHTML = shown.map(cardHTML).join('');
+    $('#grid').innerHTML = shown.map((c, i) => cardHTML(c, i)).join('');
     $('#empty').hidden = shown.length > 0;
     $('#count').textContent = shown.length === ALL.length ? `${ALL.length} on the wall` : `${shown.length} of ${ALL.length}`;
     $$('#sort button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.sort === state.sort)));

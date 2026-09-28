@@ -7,6 +7,7 @@
   --ink: #1e1e1e; --paper: #fefefe; --card: #fefefe; --edge: #1e1e1e; --shade: #1e1e1e;
   --bar: #1e1e1e; --on-bar: #fefefe;
   --accent: #d45bb6; --accent2: #f386a1; --second: #f9cadd; --on-accent: #fefefe;
+  --bar1: #ffcd75; --bar2: #41a6f6; --bar3: #7fdcb5;
   --dots: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Crect x='8' y='8' width='2' height='2' fill='%23dcdcdc'/%3E%3C/svg%3E");
   --dots-ink: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Crect x='8' y='8' width='2' height='2' fill='%23444444'/%3E%3C/svg%3E");
   --mono: "Departure Mono", ui-monospace, Menlo, Consolas, monospace;
@@ -94,7 +95,10 @@ main.wrap { padding-bottom: 80px; }
 .win-t::before { content: ""; flex: none; width: 10px; height: 10px; margin-top: .3em; background: var(--sc, var(--on-accent)); box-shadow: 0 0 0 2px #1e1e1e; }
 .win-t .t { flex: 1; min-width: 0; overflow-wrap: anywhere; }
 .win-t .n { display: inline-flex; align-items: center; gap: 6px; flex: none; white-space: nowrap; }
-.card:hover .win-t { background: var(--accent2); color: #1e1e1e; }
+.card.b1 .win-t { background: var(--bar1); color: #1e1e1e; }
+.card.b2 .win-t { background: var(--bar2); color: #1e1e1e; }
+.card.b3 .win-t { background: var(--bar3); color: #1e1e1e; }
+.card:hover .win-t { background: #1e1e1e; color: #fefefe; }
 .ph { position: relative; aspect-ratio: 16 / 10; overflow: hidden; margin: 10px 10px 0; border: 2px solid var(--edge); background: var(--second); }
 .ph img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .why { margin: 10px 12px 12px; font-size: 16px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
