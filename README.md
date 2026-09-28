@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-157-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-158-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-24-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-43-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Benchmarks](https://img.shields.io/badge/benchmarks-34-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-116-181717?style=flat-square&logo=github&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-117-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-20-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -27,7 +27,7 @@
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
 - [🧪 Open Source](#-open-source) (43)
-- [🔧 Built with Jev](#-built-with-jev) (35)
+- [🔧 Built with Jev](#-built-with-jev) (36)
 - [📊 Benchmark & Leaderboard](#-benchmark--leaderboard) (35)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
@@ -43,7 +43,7 @@
 
 🆕 **2026-09-22 · Ecosystem refresh.** 14 additions: local and multimodal decision models, Android chat assistance, robot and game demos, calibration tools and comparative evaluations. All 14 have gallery cards; two older entries returning 404 were removed. [Reviewed sources and scope](updates/2026-09-22.md).
 
-🚀 **2026-09 · Collection status.** 157 entries in 8 sections. PRs welcome.
+🚀 **2026-09 · Collection status.** 158 entries in 8 sections. PRs welcome.
 
 🧪 **2026-09 · Open source and evaluations.** 43 open models and codebases rebuild the System One shape, and 34 benchmarks and evaluations of Jev are collected under Benchmark & Leaderboard.
 
@@ -153,6 +153,7 @@ Open, licensed software that puts Jev inside something that runs: routers, agent
 - [jev-robot-control](https://github.com/openroboto-ai/jev-robot-control), Same task, different decisions: Jev against GPT-4.1 and GPT-4o mini on a robot arm, with cost and time per episode. [![Code](https://img.shields.io/github/stars/openroboto-ai/jev-robot-control?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/openroboto-ai/jev-robot-control)
 - [tsai-sc](https://github.com/phyous/tsai-sc), TypeSafe Jev controls the original StarCraft, one typed decision per game tick. [![Code](https://img.shields.io/github/stars/phyous/tsai-sc?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/phyous/tsai-sc)
 - [jgrep](https://github.com/kyu1204/jgrep), Code search, diff gate and test selection with one Jev Noul per chunk, 16 chunks per request; the author measures a 238-chunk TypeScript tree in 1.0 s for $0.003 and `--tests` picking tests for a diff in one 3,430-token request. [![Code](https://img.shields.io/github/stars/kyu1204/jgrep?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/kyu1204/jgrep)
+- [Jev Deep Research](https://github.com/sunyasheng/JevDeepResearch), Parallel evidence finding for GPT research agents with Jev Choice and Noul through Pi-Serini; reports 19/20 correct for Jev-60 on a 20-question BrowseComp-Plus development sample, with reproduction commands. [![Code](https://img.shields.io/github/stars/sunyasheng/JevDeepResearch?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/sunyasheng/JevDeepResearch)
 
 ---
 
