@@ -84,28 +84,24 @@ button, input { font: inherit; color: inherit; }
 /* ---------- wall: every entry is a window ---------- */
 main.wrap { padding-bottom: 80px; }
 #grid { display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); gap: 24px 22px; }
-.card { display: flex; flex-direction: column; min-width: 0; background: var(--card); color: var(--ink); text-decoration: none; border: 2px solid var(--edge); box-shadow: 4px 4px 0 var(--shade); transition: transform .08s steps(2), box-shadow .08s steps(2); }
+/* each card spans four rows of the wall, so title bars, pictures and text line up across a row */
+.card { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0; min-width: 0; background: var(--card); color: var(--ink); text-decoration: none; border: 2px solid var(--edge); box-shadow: 4px 4px 0 var(--shade); transition: transform .08s steps(2), box-shadow .08s steps(2); }
 .card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--shade); }
 .card:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--shade); }
 .card:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover, .card:active { transform: none; } }
-.win-t { display: flex; align-items: center; gap: 10px; background: var(--accent); color: var(--on-accent); font: 400 17px/1 var(--mono); padding: 7px 9px 6px; white-space: nowrap; overflow: hidden; border-bottom: 2px solid var(--edge); }
-.win-t::before { content: ""; flex: none; width: 10px; height: 10px; background: var(--on-accent); box-shadow: 0 0 0 2px #1e1e1e; }
-.win-t .t { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
-.win-t .n { display: inline-flex; align-items: center; gap: 6px; flex: none; }
+.win-t { display: flex; align-items: flex-start; gap: 10px; background: var(--accent); color: var(--on-accent); font: 400 17px/1.25 var(--mono); padding: 7px 9px 6px; border-bottom: 2px solid var(--edge); }
+.win-t::before { content: ""; flex: none; width: 10px; height: 10px; margin-top: .3em; background: var(--sc, var(--on-accent)); box-shadow: 0 0 0 2px #1e1e1e; }
+.win-t .t { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.win-t .n { display: inline-flex; align-items: center; gap: 6px; flex: none; white-space: nowrap; }
 .card:hover .win-t { background: var(--accent2); color: #1e1e1e; }
-.card:hover .win-t::before { background: #1e1e1e; box-shadow: 0 0 0 2px #1e1e1e; }
 .ph { position: relative; aspect-ratio: 16 / 10; overflow: hidden; margin: 10px 10px 0; border: 2px solid var(--edge); background: var(--second); }
 .ph img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.why { margin: 10px 12px 0; font-size: 15.5px; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; height: calc(3 * 1.45em); }
-.foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: auto 12px 0; padding: 12px 0 11px; font-size: 15.5px; line-height: 1.2; }
-.why + .foot { margin-top: 12px; background: linear-gradient(90deg, var(--edge) 50%, transparent 0) 0 0 / 6px 2px repeat-x; }
-.foot .sec { display: inline-flex; align-items: center; gap: 8px; min-width: 0; color: var(--sc); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.foot .sec i { width: 10px; height: 10px; background: var(--sc); box-shadow: 0 0 0 2px var(--edge); margin: 2px; flex: none; }
-.foot .meta { display: inline-flex; align-items: center; gap: 7px; flex: none; max-width: 60%; white-space: nowrap; overflow: hidden; }
-.foot .meta span { overflow: hidden; text-overflow: ellipsis; }
-.foot .meta img { width: 20px; height: 20px; flex: none; border: 2px solid var(--edge); box-sizing: content-box; background: var(--paper); }
-.foot .meta svg:not(.px) { width: 16px; height: 16px; flex: none; }
+.why { margin: 10px 12px 12px; font-size: 16px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.foot { align-self: end; display: flex; align-items: center; gap: 8px; min-width: 0; margin: 0 12px; padding: 12px 0 11px; font-size: 16px; line-height: 1.2; white-space: nowrap; background: linear-gradient(90deg, var(--edge) 50%, transparent 0) 0 0 / 6px 2px repeat-x; }
+.foot span { overflow: hidden; text-overflow: ellipsis; }
+.foot img { width: 20px; height: 20px; flex: none; border: 2px solid var(--edge); box-sizing: content-box; background: var(--paper); }
+.foot svg:not(.px) { width: 16px; height: 16px; flex: none; }
 .empty { text-align: center; padding: 60px 0; font-size: 18px; }
 
 /* ---------- footer ---------- */
@@ -137,10 +133,11 @@ footer .fwin a { text-underline-offset: 3px; }
   #grid { gap: 16px 14px; }
   .win-t { font-size: 15px; padding: 6px 7px 5px; gap: 7px; }
   .win-t::before { width: 8px; height: 8px; }
+  .win-t .n { font-size: 14px; }
   .ph { margin: 7px 7px 0; }
   .why { display: none; }
-  .foot { flex-direction: column; align-items: flex-start; gap: 6px; margin: 0 8px; padding: 8px 0 9px; font-size: 14px; }
-  .foot .meta { max-width: 100%; }
+  .foot { margin: 7px 8px 0; padding: 8px 0 9px; font-size: 14px; white-space: normal; align-items: flex-start; }
+  .foot span { overflow-wrap: anywhere; }
 }
 
 :root{--s-systemone:#2F80ED;--s-reproductions:#7C5CE6;--s-builtwith:#BE2D6E;--s-evaluations:#F0545C;--s-commentary:#12866B;--s-incumbents:#D98A0B;--s-name:#1B2A6B;}

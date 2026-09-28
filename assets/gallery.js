@@ -18,7 +18,7 @@
     seed: Math.random(),
   };
   let shown = [];
-  const hay = new Map(ALL.map((c) => [c.key, [c.name, c.sub, c.why, c.org, c.venue, c.year, SEC[c.section].label, c.repo, c.hf].join('\n').toLowerCase()]));
+  const hay = new Map(ALL.map((c) => [c.key, [c.name, c.sub, c.blurb, c.why, c.org, c.venue, c.year, SEC[c.section].label, c.repo, c.hf].join('\n').toLowerCase()]));
 
   // ---------- pixel icons, drawn at twice their grid size so every pixel lands on the screen grid
   function pxIcon(rows) {
@@ -50,20 +50,19 @@
   }
   function cardHTML(c) {
     const s = SEC[c.section];
-    const why = c.why ? c.why[0].toUpperCase() + c.why.slice(1) : '';
+    const text = c.blurb || (c.why ? c.why[0].toUpperCase() + c.why.slice(1) : '');
     const n = c.stars ? `<span class="n">${I_STAR}${stars(c.stars)}</span>`
       : c.likes ? `<span class="n">${I_HEART}${stars(c.likes)}</span>` : '';
     // who made it: the GitHub avatar when we have one, else the site's own mark
-    const who = c.repo ? `${c.avatar ? `<img src="${esc(c.avatar)}" alt="">` : I_GH}<span>${esc(c.org)}`
-      : c.hf ? `${I_HF}<span>${esc(c.hf.split('/')[0])}`
-      : c.arxiv ? `${I_DOC}<span>${esc(c.venue || 'arXiv')}`
-      : `${I_GLOBE}<span>${esc(domain(c.url))}`;
-    const meta = who + (c.year ? ` · ${c.year}` : '') + '</span>';
-    return `<a class="card" href="${esc(c.url)}" target="_blank" rel="noopener" data-key="${esc(c.key)}" style="--sc:var(--s-${c.section})">
-      <div class="win-t"><span class="t" title="${esc(c.name)}">${esc(c.name)}</span>${n}</div>
+    const who = c.repo ? `${c.avatar ? `<img src="${esc(c.avatar)}" alt="">` : I_GH}<span>${esc(c.org)}</span>`
+      : c.hf ? `${I_HF}<span>${esc(c.hf.split('/')[0])}</span>`
+      : c.arxiv ? `${I_DOC}<span>${esc(c.venue || 'arXiv')}</span>`
+      : `${I_GLOBE}<span>${esc(domain(c.url))}</span>`;
+    return `<a class="card" href="${esc(c.url)}" target="_blank" rel="noopener" data-key="${esc(c.key)}" title="${esc(s.label)}" style="--sc:var(--s-${c.section})">
+      <div class="win-t"><span class="t">${esc(c.name)}</span>${n}</div>
       <div class="ph"><img loading="lazy" src="${esc(c.thumb)}" width="800" height="500" alt=""></div>
-      <div class="why">${esc(why)}</div>
-      <div class="foot"><span class="sec" title="${esc(s.label)}"><i></i>${esc(s.chip)}</span><span class="meta">${meta}</span></div>
+      <div class="why">${esc(text)}</div>
+      <div class="foot">${who}</div>
     </a>`;
   }
   function render() {
