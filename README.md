@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-158-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-159-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-24-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-43-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
-![Benchmarks](https://img.shields.io/badge/benchmarks-34-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-117-181717?style=flat-square&logo=github&logoColor=white)
+![Benchmarks](https://img.shields.io/badge/benchmarks-35-F0545C?style=flat-square&logo=speedtest&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-118-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-20-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -28,7 +28,7 @@
 - [⚡ System One & Jev](#-system-one--jev) (8)
 - [🧪 Open Source](#-open-source) (43)
 - [🔧 Built with Jev](#-built-with-jev) (36)
-- [📊 Benchmark & Leaderboard](#-benchmark--leaderboard) (35)
+- [📊 Benchmark & Leaderboard](#-benchmark--leaderboard) (36)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
 - [🧱 What Jev Is Sold Against](#-what-jev-is-sold-against) (9)
@@ -43,9 +43,9 @@
 
 🆕 **2026-09-22 · Ecosystem refresh.** 14 additions: local and multimodal decision models, Android chat assistance, robot and game demos, calibration tools and comparative evaluations. All 14 have gallery cards; two older entries returning 404 were removed. [Reviewed sources and scope](updates/2026-09-22.md).
 
-🚀 **2026-09 · Collection status.** 158 entries in 8 sections. PRs welcome.
+🚀 **2026-09 · Collection status.** 159 entries in 8 sections. PRs welcome.
 
-🧪 **2026-09 · Open source and evaluations.** 43 open models and codebases rebuild the System One shape, and 34 benchmarks and evaluations of Jev are collected under Benchmark & Leaderboard.
+🧪 **2026-09 · Open source and evaluations.** 43 open models and codebases rebuild the System One shape, and 35 benchmarks and evaluations of Jev are collected under Benchmark & Leaderboard.
 
 ---
 
@@ -186,6 +186,7 @@ Benchmarks, leaderboards and independent tests of Jev, with the headline number 
 - [padflow-jev-evals](https://github.com/zsavage8/padflow-jev-evals), Three production SaaS decisions published as schemas with auto-post confidence thresholds; LLM baseline rows filled, Jev row still empty. [![Code](https://img.shields.io/github/stars/zsavage8/padflow-jev-evals?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/zsavage8/padflow-jev-evals)
 - [jev-playground](https://github.com/hegargarcia/jev-playground), Tic-tac-toe and connect four pitting Jev against four frontier models on identical legal-move choice options; no aggregate results published yet. [![Code](https://img.shields.io/github/stars/hegargarcia/jev-playground?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/hegargarcia/jev-playground)
 - [jev-benchmarks (frontier comparison harness)](https://github.com/thijmenkam/jev-benchmarks), Harness asking Jev and frontier LLMs identical typed questions, scoring accuracy, calibration, latency and schema validity; no measured run published yet. [![Code](https://img.shields.io/github/stars/thijmenkam/jev-benchmarks?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/thijmenkam/jev-benchmarks)
+- [Confident Where People Disagree](https://zenodo.org/records/22971492), "A preregistered, bias-corrected test of whether TypeSafe AI's Jev lowers its confidence when humans disagree, on ChaosNLI". 750 ChaosNLI items where annotators agree against 750 where they split, scored against the share of 100 annotators who chose Jev's label: Choice confidence averages 0.807 against 0.468 agreement on the split items, a bias-corrected calibration gap of 0.264 over the preregistered 0.09, while Noul's 0.076 is inconclusive. [![Code](https://img.shields.io/github/stars/GautamTalksDev/jevbench?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/GautamTalksDev/jevbench)
 - [DeepSearcher search-stopping evaluation](https://github.com/zilliztech/deep-searcher/blob/master/evaluation/jev_stopping/README.md), Jev and a DeepSeek stopping baseline both reach 93.25% supporting-document Recall@5 on 100 sampled 2WikiMultiHopQA queries, replayed over shared seven-round search trajectories; includes reproduction code and archived results.
 - [MemSearch reranking evaluation](https://github.com/zilliztech/memsearch/blob/main/evaluation/reranking-evaluation.md), Jev reaches 79.41% Recall@5 versus 81.87% for Voyage rerank-3 over 4,344 Chinese/English query variants with fixed candidates; the memory corpus requires an authorized copy.
 - [Vector Graph RAG relation-reranker evaluation](https://github.com/zilliztech/vector-graph-rag/blob/main/evaluation/jev/README.md), Jev reaches 68.87% MuSiQue and 93.50% HotpotQA Recall@5 on 500 queries per dataset, with cached results, reproduction scripts, and explicit caveats for historical comparisons.
