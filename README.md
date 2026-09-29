@@ -8,8 +8,8 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-159-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
-![Papers](https://img.shields.io/badge/papers-24-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-160-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Papers](https://img.shields.io/badge/papers-25-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-43-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Benchmarks](https://img.shields.io/badge/benchmarks-35-F0545C?style=flat-square&logo=speedtest&logoColor=white)
 ![With code](https://img.shields.io/badge/with%20code-118-181717?style=flat-square&logo=github&logoColor=white)
@@ -29,7 +29,7 @@
 - [🧪 Open Source](#-open-source) (43)
 - [🔧 Built with Jev](#-built-with-jev) (36)
 - [📊 Benchmark & Leaderboard](#-benchmark--leaderboard) (36)
-- [📰 Commentary & Analysis](#-commentary--analysis) (7)
+- [📰 Commentary & Analysis](#-commentary--analysis) (8)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
 - [🧱 What Jev Is Sold Against](#-what-jev-is-sold-against) (9)
 - [🧠 Where the Name Comes From](#-where-the-name-comes-from) (5)
@@ -200,6 +200,7 @@ Benchmarks, leaderboards and independent tests of Jev, with the headline number 
 
 Reporting and technical commentary that checks the launch claims against the evidence.
 
+- [Jev in the Wild](https://arxiv.org/abs/2609.30216), "A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem". Data-driven survey of 2,170 public GitHub Jev projects mapping early growth, application domains and decision-use patterns. ![arXiv](https://img.shields.io/badge/arXiv-2609.30216-B31B1B?style=flat-square)
 - [AINews: Jev, a System One Model that only decides](https://www.latent.space/p/ainews-jev-a-system-one-model-that), Latent Space roundup of the launch and the HN mapping onto encoders, GLiNER, constrained decoding and DSPy. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://www.latent.space/p/ainews-jev-a-system-one-model-that)
 - [Agentpedia claim-vs-evidence guide](https://agentpedia.codes/blog/jev-system-one-models), Claim-by-claim audit separating verified Jev pricing and latency from unproven calibration; puts aggregate accuracy at 67.8% versus Opus 5's 73.1%. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://agentpedia.codes/blog/jev-system-one-models)
 - [The Register: TypeSafe AI debuts model for machines](https://www.theregister.com/ai-and-ml/2026/09/16/typesafe-ai-debuts-model-for-machines-that-plays-doom/5296711), Press account of the $40M raise, the Doom demo and the caveat that structured output is a different error type, not correctness. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://www.theregister.com/ai-and-ml/2026/09/16/typesafe-ai-debuts-model-for-machines-that-plays-doom/5296711)
