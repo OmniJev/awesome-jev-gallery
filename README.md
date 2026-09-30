@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-160-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-161-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-25-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
-![Open source](https://img.shields.io/badge/open%20source-43-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
+![Open source](https://img.shields.io/badge/open%20source-44-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Benchmarks](https://img.shields.io/badge/benchmarks-35-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-118-181717?style=flat-square&logo=github&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-119-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-20-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -26,7 +26,7 @@
 
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
-- [🧪 Open Source](#-open-source) (43)
+- [🧪 Open Source](#-open-source) (44)
 - [🔧 Built with Jev](#-built-with-jev) (36)
 - [📊 Benchmark & Leaderboard](#-benchmark--leaderboard) (36)
 - [📰 Commentary & Analysis](#-commentary--analysis) (8)
@@ -107,6 +107,7 @@ Open weights and code that rebuild the System One shape from encoders, small dec
 - [system-one-mini](https://huggingface.co/DavidHatley/system-one-mini), DistilBERT-sized System One shape, a floor for how small the idea can go. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/DavidHatley/system-one-mini)
 - [Jebadiah](https://github.com/getainode/jebadiah), Apache-2.0 decision models at 27B, 9B and 4B on Qwen bases that return a probability for every Choice, Noul and Score option in one forward pass; serves Jev's `/v1/systemone` wire. [![Code](https://img.shields.io/github/stars/getainode/jebadiah?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/getainode/jebadiah) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/frontier-infra/jebadiah-27b)
 - [jevos](https://github.com/feder-cr/jev), MiniCPM5-1B cut to 17 layers and served as a 619 MB GGUF on CPU-only llama.cpp; answers Noul (yes/no) questions over Jev's `/v1/systemone` wire in 54 to 220 ms, 0.815 accuracy versus Jev's 0.927. [![Code](https://img.shields.io/github/stars/feder-cr/jev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/feder-cr/jev)
+- [WebJev](https://github.com/lexmount/WebJev), Apache-2.0 Qwen3.5-35B-A3B fine-tune for browser agents that returns a probability for every operation and element option over Jev's `/v1/systemone` wire, released with its training recipe and live-web training data; authors report 38.52% on 125 real-website tasks graded by deterministic verifiers versus 16.67% for Jev 1.13 inside the same jev-ultrafast agent. [![Code](https://img.shields.io/github/stars/lexmount/WebJev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/lexmount/WebJev) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/Lexmount/WebJev-35B-A3B) [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-06B6D4?style=flat-square)](https://huggingface.co/datasets/Lexmount/WebJev)
 
 ---
 
