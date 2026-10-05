@@ -1985,5 +1985,23 @@
   "license": null,
   "thumb": "assets/tiles/www.nobelprize.org-prizes-economic-sciences-2002-kahneman-lecture.jpg",
   "src": "the page's preview image"
+ },
+ {
+  "key": "repo:alperkartkaya/flightbench",
+  "slug": "repo-alperkartkaya-flightbench",
+  "order": 130,
+  "name": "FlightBench",
+  "why": "FlightBench is a fixed-wing landing simulator and benchmark where you can compete with Jev in landing a plane. Jev receives four Choice decisions and outputs aircraft controls. The simulation runs on JSBSim and allows comparison of landings against human-pilot, baseline, and Codex controllers.",
+  "test": "d",
+  "section": "builtwith",
+  "kind": "repo",
+  "url": "https://github.com/AlperKartkaya/FlightBench",
+  "repo": "AlperKartkaya/FlightBench",
+  "org": "AlperKartkaya",
+  "license": "MIT",
+  "stars": null,
+  "thumb": "assets/tiles/repo-alperkartkaya-flightbench.png",
+  "src": "Screenshot from Jev's run",
+  "avatar": "assets/avatars/AlperKartkaya.jpg"
  }
 ]
