@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-167-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-168-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-25-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-46-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Benchmarks](https://img.shields.io/badge/benchmarks-35-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-125-181717?style=flat-square&logo=github&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-126-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-20-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -27,7 +27,7 @@
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
 - [🧪 Open Source](#-open-source) (46)
-- [🔧 Built with Jev](#-built-with-jev) (40)
+- [🔧 Built with Jev](#-built-with-jev) (41)
 - [📊 Benchmark & Leaderboard](#-benchmark--leaderboard) (36)
 - [📰 Commentary & Analysis](#-commentary--analysis) (8)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
@@ -157,6 +157,7 @@ Open, licensed software that puts Jev inside something that runs: routers, agent
 - [FlightBench](https://github.com/AlperKartkaya/FlightBench), A fixed-wing landing simulator and benchmark where you can compete with Jev in landing a plane. [![Code](https://img.shields.io/github/stars/AlperKartkaya/FlightBench?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/AlperKartkaya/FlightBench) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://alperkartkaya.github.io/FlightBench/jev-flight/)
 - [jev-skill-router](https://github.com/shimo4228/jev-skill-router), Claude Code hook that asks Jev which installed skill fits each prompt and logs the answer; in the author's week of shadow mode, 28 of 539 suggestions were followed by a call of that skill within 30 minutes, and the author removed it. [![Code](https://img.shields.io/github/stars/shimo4228/jev-skill-router?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/shimo4228/jev-skill-router)
 - [mu](https://github.com/qybaihe/mu), Coding agent and desktop app built on Pi that hands 38 routine decisions to Jev, each a typed question whose answer code acts on, from what enters the context to whether "done" was verified; in the authors' replay, goal-aware test-log selection by Jev cut 40-46% of the log and lost no required line. [![Code](https://img.shields.io/github/stars/qybaihe/mu?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/qybaihe/mu)
+- [strayguard](https://github.com/Eve2512/Strayguard), Pre-commit hook where one Jev Choice per newly added file flags scratch, output dumps, build output and local-only files; the author's 100-file eval reports 0 of 60 false alarms and 40 of 40 strays caught with jev-1.13.0, on a sample the author also wrote. [![Code](https://img.shields.io/github/stars/Eve2512/Strayguard?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Eve2512/Strayguard)
 
 ---
 
