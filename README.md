@@ -8,9 +8,9 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-169-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-170-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-26-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
-![Open source](https://img.shields.io/badge/open%20source-47-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
+![Open source](https://img.shields.io/badge/open%20source-48-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Benchmarks](https://img.shields.io/badge/benchmarks-35-F0545C?style=flat-square&logo=speedtest&logoColor=white)
 ![With code](https://img.shields.io/badge/with%20code-127-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-20-FFD21E?style=flat-square)
@@ -26,7 +26,7 @@
 
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
-- [🧪 Open Source](#-open-source) (47)
+- [🧪 Open Source](#-open-source) (48)
 - [🔧 Built with Jev](#-built-with-jev) (41)
 - [📊 Benchmark & Leaderboard](#-benchmark--leaderboard) (36)
 - [📰 Commentary & Analysis](#-commentary--analysis) (8)
@@ -111,6 +111,7 @@ Open weights and code that rebuild the System One shape from encoders, small dec
 - [WaterSheep](https://github.com/SamratDuttaOfficial/WaterSheep), Apache-2.0 decision model that returns a calibrated probability for every Noul, Choice, Score and multi-label option and serves Jev's `/v1/systemone` wire; the official Python SDK works against it unchanged. [![Code](https://img.shields.io/github/stars/SamratDuttaOfficial/WaterSheep?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/SamratDuttaOfficial/WaterSheep) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/samratduttaofficial/WaterSheep) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://samratduttaofficial.github.io/WaterSheep/)
 - [Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1), Apache-2.0 bilingual (English/Chinese) decision model on mmBERT-small that returns calibrated Choice, Score and Noul probabilities in one 144.3M-parameter forward pass; authors report typed-decisions 0.906 (en, specialist: fitted on this dataset's train split) / 0.848 (zh, machine-translated cases) at 21.0 ms p50 on an RTX 5090. [![Code](https://img.shields.io/github/stars/Phocinae/Phocinae-Largha-150M-v1?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Phocinae/Phocinae-Largha-150M-v1) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1)
 - [VideoJev](https://arxiv.org/abs/2610.18615), "System One Model for Video Understanding and Interaction". [![arXiv](https://img.shields.io/badge/arXiv-2610.18615-B31B1B?style=flat-square)](https://arxiv.org/abs/2610.18615) [![Code](https://img.shields.io/github/stars/MCG-NJU/VideoJev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/MCG-NJU/VideoJev) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/ZhuYuhan/VideoJev-4B)
+- [Dwight 4B](https://huggingface.co/zime-ai/dwight-4b), Apache-2.0 Qwen3-4B fine-tune for sales call transcripts that answers a yes/no, Choice or 0-10 Score question as one option token with a probability per option; it also writes JSON insights with verbatim quotes. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/zime-ai/dwight-4b)
 
 ---
 
