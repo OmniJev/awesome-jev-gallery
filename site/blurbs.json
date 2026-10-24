@@ -3,6 +3,7 @@
  "docs.typesafe.ai-primitives": "The three typed question shapes Jev answers",
  "docs.typesafe.ai-model-jaggedness-jev-1.13": "TypeSafe's own list of where Jev 1.13 fails",
  "repo-omnijev-onejev": "Open multimodal System One model in four sizes",
+ "repo-omnijev-flide": "Inference engine that forks one state into every question",
  "repo-rizzo-ai-academy-rizzo-flow": "Local Jev-compatible decisions through llama.cpp",
  "repo-zefan-cai-open-jev": "Qwen3.5 2B and 9B adapters with decision heads",
  "repo-psiace-dohnuts": "0.8B text and image decision model, one RX 7900 XTX",

@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-171-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-173-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-27-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
-![Open source](https://img.shields.io/badge/open%20source-49-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
-![Benchmarks](https://img.shields.io/badge/benchmarks-35-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-127-181717?style=flat-square&logo=github&logoColor=white)
+![Open source](https://img.shields.io/badge/open%20source-50-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
+![Benchmarks](https://img.shields.io/badge/benchmarks-36-F0545C?style=flat-square&logo=speedtest&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-129-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-21-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -26,9 +26,9 @@
 
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
-- [🧪 Open Source](#-open-source) (49)
+- [🧪 Open Source](#-open-source) (50)
 - [🔧 Built with Jev](#-built-with-jev) (41)
-- [📊 Benchmark & Leaderboard](#-benchmark--leaderboard) (36)
+- [📊 Benchmark & Leaderboard](#-benchmark--leaderboard) (37)
 - [📰 Commentary & Analysis](#-commentary--analysis) (8)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
 - [🧱 What Jev Is Sold Against](#-what-jev-is-sold-against) (9)
@@ -65,6 +65,7 @@ What TypeSafe has published: the launch post, the contract, the failure modes it
 Open weights and code that rebuild the System One shape from encoders, small decoders and constrained decoding.
 
 - [OneJev](https://github.com/OmniJev/OneJev), Open multimodal System One model in four sizes (0.8B to 27B): typed questions about a screenshot, photo, video or text get a calibrated probability for every option in one forward pass. [![Code](https://img.shields.io/github/stars/OmniJev/OneJev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/OmniJev/OneJev) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/collections/OmniJev/onejev) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://omnijev.github.io/OneJev/)
+- [Flide](https://github.com/OmniJev/flide), Open inference engine for decision models: forks one state into all of its questions in one forward pass, so every answer matches the question asked alone, and serves OneJev, Qwen3.5 and Gemma 4 through /v1/systemone. [![Code](https://img.shields.io/github/stars/OmniJev/flide?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/OmniJev/flide) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://flide.org)
 - [Rizzo Flow](https://github.com/Rizzo-AI-Academy/rizzo-flow), Local Jev-compatible decisions on Spark-X2.5 through llama.cpp; authors report 49 ms p50 for short Q8_0 decisions on an RTX 5060 Ti, with uncalibrated probabilities by default. [![Code](https://img.shields.io/github/stars/Rizzo-AI-Academy/rizzo-flow?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Rizzo-AI-Academy/rizzo-flow) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://rizzo-ai-academy.github.io/rizzo-flow/)
 - [Open-Jev (ZefanCai)](https://github.com/Zefan-Cai/Open-Jev), Released Qwen3.5-2B and 9B LoRA adapters with scalar decision heads and a public dataset; the 9B model answers 179 of 231 public JevBench tasks correctly in the authors' evaluation. [![Code](https://img.shields.io/github/stars/Zefan-Cai/Open-Jev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Zefan-Cai/Open-Jev) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/ZefanCai/Open-Jev-9B) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://zefan-cai.github.io/open-jev/)
 - [this-that-model](https://github.com/FLock-io/this-that-model), 1.88B fine-tune of decider-2b whose head scores only the declared option labels, so an answer outside the set cannot occur; authors report 0.775 on their released 1,710-question decision benchmark. [![Code](https://img.shields.io/github/stars/FLock-io/this-that-model?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/FLock-io/this-that-model) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/flock-io/this-that-model-1.1) [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-06B6D4?style=flat-square)](https://huggingface.co/datasets/limberc/this-that-complex-decisions)
