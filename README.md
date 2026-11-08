@@ -166,6 +166,7 @@ Software that puts Jev inside something that runs: routers, agents, games and in
 - [s1kit](https://github.com/Eliot5566/s1kit), Python CLI that tests Jev and other `/v1/systemone` models side by side on your labelled cases, picks a per-question confidence cutoff for a target precision, and routes answers below it to the next model; ships an offline baseline and a GitHub Action. [![Code](https://img.shields.io/github/stars/Eliot5566/s1kit?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Eliot5566/s1kit)
 
 ---
+- [OnlyRead](https://github.com/onlyreadai/onlyread), Chrome extension that keeps AI agents read-only on the sites you pick: Jev judges whether each request would change data, and code blocks the ones that would. [![Code](https://img.shields.io/github/stars/onlyreadai/onlyread?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/onlyreadai/onlyread) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://onlyread.ai)
 
 ## 📊 Benchmark & Leaderboard
 
